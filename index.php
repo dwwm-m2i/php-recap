@@ -35,6 +35,7 @@ $a = [
     <?php foreach ($contacts as $contact) { ?>
         <li class="item blue exemple">
             <?= $contact['name']; ?>: <?= $contact['message']; ?>
+            <a href="modifier.php?id=<?= $contact['id']; ?>">🖊️</a>
             <a href="supprimer.php?id=<?= $contact['id']; ?>">❌</a>
         </li>
     <?php } ?>
